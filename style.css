@@ -13,63 +13,66 @@ body {
 
 h1{
   color: #ffffff;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
 }
 
 p{
-  color: red;
   font-weight: bold;
   text-align: center;
-  font-size: 30pt;
-}
-
-ul, li{
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  font-size: 25pt;
-  list-style-type: none;
-}
-
-.nnh{
-  color: #fff;
+  font-size: 24pt;
 }
 
 footer{
-  margin-top: 50px;
   color: #fff;
   font-size: 13pt;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
 }
 
-footer a{
+footer a, footer p{
   color: #fff;
   text-decoration: none;
+  font-size: 10pt;
 }
 
-@media (max-width: 800px) and (min-width: 500px){
+@media (max-width: 800px) and (min-width: 700px){
   h1{
     font-size: 28px;
     }
-    .nnh{
+    .nh{
       font-size: 17pt;
-    }
-    body{
-      margin-top: 20px;
     }
 }
 
-@media (max-width:500px){
+@media (max-width: 700px) and (min-width: 500px){
+  h1{
+    font-size: 25px;
+    }
+    p{
+      font-size: 16pt;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 400px){
+  h1{
+  font-size: 16px;
+  }
+  .nh{
+    font-size: 14pt;
+  }
+}
+
+@media (max-width:400px){
   h1{
   font-size: 18px;
   }
-  .nnh{
-    font-size: 12pt;
-  }
-  body{
-    margin-top: 20px;
-  }
-  p, li{
-    font-size: 12pt;
+  .nh{
+    font-size: 16px;
   }
 }

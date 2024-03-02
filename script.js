@@ -59,9 +59,9 @@ function sprawdzNiedzieleHandlowa() {
 
   if (czyNiedzielaHandlowa()) {
     document.querySelector("h1").classList.add("niedziela-handlowa");
-    wynik = "<p class='nh' style='color: lime;'>Dzisiaj jest niedziela handlowa! <br> Następna będzie " + najblizszaData + "</p>";
+    wynik = "<p class='nh' style='color: lime;'>Tak! <br> Następna handlowa będzie " + najblizszaData + "</p>";
   } else {
-    wynik = "<p class='nh' style='color: red;'>Nie, najbliższa niedziela handlowa jest " + najblizszaData + "</p>";
+    wynik = "<p class='nh' style='color: red;'>Nie, najbliższa handlowa będzie " + najblizszaData + "</p>";
   }
   document.write(wynik);
 }

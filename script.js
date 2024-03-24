@@ -11,10 +11,10 @@ var niedzieleHandlowe = [
 function czyNiedzielaHandlowa() {
   var dzisiaj = new Date();
   var rok = dzisiaj.getFullYear();
-  var miesiac = dzisiaj.getMonth() + 1; // Dodajemy 1, ponieważ miesiące są indeksowane od 0.
+  var miesiac = dzisiaj.getMonth() + 1;
   var dzien = dzisiaj.getDate();
 
-  var dzisiejszaData = rok + "-" + pad(miesiac) + "-" + pad(dzien); // Formatujemy datę jako "YYYY-MM-DD".
+  var dzisiejszaData = rok + "-" + pad(miesiac) + "-" + pad(dzien);
 
   if (niedzieleHandlowe.includes(dzisiejszaData)) {
     return true;
@@ -23,7 +23,6 @@ function czyNiedzielaHandlowa() {
   }
 }
 
-// Funkcja pomocnicza do dodawania zera przed liczbami jednocyfrowymi.
 function pad(number) {
   return number < 10 ? "0" + number : number;
 }
@@ -59,7 +58,7 @@ function sprawdzNiedzieleHandlowa() {
 
   if (czyNiedzielaHandlowa()) {
     document.querySelector("h1").classList.add("niedziela-handlowa");
-    wynik = "<p class='nh' style='color: lime;'>Tak! <br> Następna handlowa będzie " + najblizszaData + "</p>";
+    wynik = "<p class='nh' style='color: lime;'>Tak! <br><br> Następna handlowa będzie " + najblizszaData + "</p>";
   } else {
     wynik = "<p class='nh' style='color: red;'>Nie, najbliższa handlowa będzie " + najblizszaData + "</p>";
   }

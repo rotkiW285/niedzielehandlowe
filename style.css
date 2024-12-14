@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+html{
+  background-color: #111616;
+}
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Outfit", serif;
   margin: 0;
   padding: 0;
-  background-color: #272727;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +16,7 @@ body {
 }
 
 h1{
-  color: #ffffff;
+  color: #fff;
   font-size: 36px;
   font-weight: bold;
 }
@@ -40,7 +42,22 @@ footer{
 footer a, footer p{
   color: #fff;
   text-decoration: none;
-  font-size: 10pt;
+  font-size: 12pt;
+}
+
+button{
+  color: #fff;
+  background-color: #101010;
+  padding: 2px 5px 2px 5px;
+  border: none;
+  font-size: 13pt;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0 10px 0;
+}
+
+api{
+  display: none;
 }
 
 @media (max-width: 800px) and (min-width: 700px){

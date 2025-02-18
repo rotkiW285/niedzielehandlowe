@@ -45,21 +45,6 @@ footer a, footer p{
   font-size: 12pt;
 }
 
-button{
-  color: #fff;
-  background-color: #101010;
-  padding: 2px 5px 2px 5px;
-  border: none;
-  font-size: 13pt;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px 0 10px 0;
-}
-
-api{
-  display: none;
-}
-
 @media (max-width: 800px) and (min-width: 700px){
   h1{
     font-size: 28px;

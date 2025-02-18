@@ -1,12 +1,10 @@
 var niedzieleHandlowe = [
-  "2024-12-15",
-  "2024-12-22",
   "2025-01-26",
   "2025-04-13",
   "2025-04-27",
   "2025-06-29",
   "2025-08-31",
-  // "2025-12-07", jesli prezydent podpisze ustawe
+  "2025-12-07",
   "2025-12-14",
   "2025-12-21",
 ];
@@ -66,22 +64,6 @@ function sprawdzNiedzieleHandlowa() {
     wynik = "<p class='nh' style='color: red;'>Nie, najbliższa handlowa będzie " + najblizszaData + "</p>";
   }
   document.write(wynik);
-
-  var jsonOutput = document.createElement("api");
-  jsonOutput.textContent = generujJSONNiedzielaHandlowa();
-  document.body.appendChild(jsonOutput);
-}
-
-function generujJSONNiedzielaHandlowa() {
-  var dzisiajHandlowa = czyNiedzielaHandlowa();
-  var najblizszaNiedziela = znajdzNajblizszaNiedzieleHandlowa();
-
-  var wynik = {
-    isHandlowa: dzisiajHandlowa,
-    nextHandlowa: najblizszaNiedziela
-  };
-
-  return JSON.stringify(wynik, null, 2);
 }
 
 sprawdzNiedzieleHandlowa();
